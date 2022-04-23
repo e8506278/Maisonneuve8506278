@@ -1,0 +1,115 @@
+body {
+    font-family: 'Nunito';
+}
+
+input {
+    padding: 5px;
+    width: 100%;
+}
+
+.liste-etudiants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.liste-etudiants>* {
+    display: list-item;
+    padding: 2px;
+    width: 20%;
+}
+
+.liste-etudiants a {
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+
+.liste-etudiants a:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+.d-flex {
+    align-items: center;
+    display: flex !important;
+}
+
+.btn+.btn {
+    margin-left: 10px;
+}
+
+.col-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}
+
+.ville-select {
+    display: block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.ville-select.disabled {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.ville-select:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+}
+
+.btn-arrow {
+    filter: invert(37%) sepia(91%) saturate(4274%) hue-rotate(208deg) brightness(98%) contrast(102%);
+    left: -5px;
+    position: relative;
+    top: -2px;
+    transition: color .15s;
+    width: 16px;
+}
+
+a:hover .btn-arrow {
+    filter: invert(100%) sepia(1%) saturate(7465%) hue-rotate(344deg) brightness(116%) contrast(105%);
+}
+
+.etudiant {
+    background-color: rgb(209, 231, 221);
+}
+
+.etudiant:nth-child(even) {
+    background-color: rgb(179, 202, 191);
+}
+
+.etudiant:hover {
+    background-color: rgb(108, 117, 125);
+    color: #ffffff;
+}
+
+.etudiant:hover .btn {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    color: #fff;
+}
+
+.btn {
+    min-width: 170px;
+}
+
+.pagination {
+    float: right;
+    margin-top: 10px;
+}
